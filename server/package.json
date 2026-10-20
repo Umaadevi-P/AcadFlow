@@ -1,0 +1,29 @@
+{
+  "name": "acaflow-server",
+  "version": "1.0.0",
+  "description": "AcaFlow Academic — Express + MongoDB backend for academic document workflow",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "seed": "node src/seed/seed.js",
+    "test": "node tests/workflow.test.mjs && node tests/api.test.mjs",
+    "test:workflow": "node tests/workflow.test.mjs",
+    "test:e2e": "node tests/api.test.mjs",
+    "test:integration": "node tests/integration.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0",
+    "nodemon": "^3.1.9"
+  }
+}
